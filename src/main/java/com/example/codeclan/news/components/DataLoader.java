@@ -43,6 +43,15 @@ public class DataLoader implements ApplicationRunner {
         Category health = new Category("Health");
         categoryRepository.save(health);
 
+        Category travel = new Category("Travel");
+        categoryRepository.save(travel);
+
+        Category politics = new Category("Politics");
+        categoryRepository.save(politics);
+
+        Category sport = new Category("Sport");
+        categoryRepository.save(sport);
+
         Date date1 = new GregorianCalendar(2018, Calendar.OCTOBER, 19, 14, 15, 30).getTime();
         Date date2 = new GregorianCalendar(2018, Calendar.OCTOBER, 19, 14, 20, 30).getTime();
 
