@@ -65,6 +65,8 @@ public class Article {
         this.timesRead = 0;
     }
 
+
+
     public Article() {
     }
 
