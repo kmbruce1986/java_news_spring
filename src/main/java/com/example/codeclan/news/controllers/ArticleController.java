@@ -28,4 +28,9 @@ public class ArticleController {
         return articleRepository.getArticlesByCategory(journalistId);
     }
 
+    @GetMapping(value = "/")
+    public List<Article> findAllArticles(){
+        return articleRepository.getArticles();
+    }
+
 }

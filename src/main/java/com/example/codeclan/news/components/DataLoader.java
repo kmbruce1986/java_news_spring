@@ -77,10 +77,10 @@ public class DataLoader implements ApplicationRunner {
         Article article2 = new Article("Another thing happened", "here it goes", copy1, "image.png", "anotherimage.png", date2, category2, loisLane);
         articleRepository.save(article2);
 
-        Article article3 = new Article("Take Me Back To Hoi An", "Historic City In Vietnam", copy2, "take_me_back_to_hoi_an_banner.jpg", "take_me_back_to_hoi_an_thumb.jpg", date3, category3, loisLane);
+        Article article3 = new Article("Take Me Back To Hoi An", "Historic City In Vietnam", copy2, "take_me_back_to_hoi_an_banner.jpg", "take_me_back_to_hoi_an_thumb.jpg", date1, category3, loisLane);
         articleRepository.save(article3);
 
-        Article article4 = new Article("Sunrise? Wat Sunrise", "Unbelievable views at Angkor Wat", copy3, "angkor_banner.jpg", "angkor_thumb.jpg", date1, category3, loisLane);
+        Article article4 = new Article("Sunrise? Wat Sunrise", "Unbelievable views at Angkor Wat", copy3, "angkor_banner.jpg", "angkor_thumb.jpg", date3, category3, loisLane);
         articleRepository.save(article4);
     }
 }
