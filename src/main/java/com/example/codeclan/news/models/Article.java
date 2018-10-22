@@ -5,6 +5,7 @@ import org.hibernate.annotations.Cascade;
 import org.hibernate.mapping.Join;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 
@@ -34,7 +35,7 @@ public class Article {
     private String thumbnailImage;
 
     @Column
-    private Date publishedDateTime;
+    private LocalDateTime publishedDateTime;
 
     @JsonIgnoreProperties("articles")
     @ManyToMany
@@ -53,7 +54,7 @@ public class Article {
     @Column
     private int timesRead;
 
-    public Article(String headline, String subline, String copy, String bannerImage, String thumbnailImage, Date publishedDateTime, List<Category> categories, Journalist journalist) {
+    public Article(String headline, String subline, String copy, String bannerImage, String thumbnailImage, LocalDateTime publishedDateTime, List<Category> categories, Journalist journalist) {
         this.headline = headline;
         this.subline = subline;
         this.copy = copy;
@@ -118,11 +119,11 @@ public class Article {
         this.thumbnailImage = thumbnailImage;
     }
 
-    public Date getPublishedDateTime() {
+    public LocalDateTime getPublishedDateTime() {
         return publishedDateTime;
     }
 
-    public void setPublishedDateTime(Date publishedDateTime) {
+    public void setPublishedDateTime(LocalDateTime publishedDateTime) {
         this.publishedDateTime = publishedDateTime;
     }
 
