@@ -12,6 +12,7 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.criteria.From;
+import java.time.LocalDateTime;
 import java.util.*;
 
 @Component
@@ -53,9 +54,9 @@ public class DataLoader implements ApplicationRunner {
         Category sport = new Category("Sport");
         categoryRepository.save(sport);
 
-        Date date1 = new GregorianCalendar(2018, Calendar.OCTOBER, 19, 14, 15, 30).getTime();
-        Date date2 = new GregorianCalendar(2018, Calendar.OCTOBER, 19, 14, 20, 30).getTime();
-        Date date3 = new GregorianCalendar(2018, Calendar.JUNE, 22,17, 00, 00).getTime();
+        LocalDateTime date1 = LocalDateTime.of(2018, Calendar.OCTOBER, 19, 14, 15, 30);
+        LocalDateTime date2 = LocalDateTime.of(2018, Calendar.OCTOBER, 19, 14, 20, 30);
+        LocalDateTime date3 = LocalDateTime.of(2018, Calendar.JUNE, 22,17, 00, 00);
 
         String copy1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non sodales tortor, et interdum ante. Suspendisse sit amet scelerisque ante. Nulla sollicitudin, lorem id ullamcorper pharetra, mi ipsum mollis lectus, et euismod nibh nisi non neque. Pellentesque non maximus est. Ut aliquam leo ut justo convallis, id tristique nunc vestibulum. Nulla a lacus urna. Aliquam pulvinar commodo enim. Sed et mauris auctor elit posuere luctus a vitae augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse potenti. In hac habitasse platea dictumst. Quisque non odio et nisl bibendum lobortis sed eget augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam elit dolor, vulputate a lobortis quis, sollicitudin quis mauris. Mauris varius magna vel tellus gravida, ac molestie turpis rhoncus. In dapibus id sem vulputate dictum. Duis vel felis sit amet eros sodales tristique. Morbi nisi diam, tincidunt bibendum nisi ac, gravida vestibulum massa. Proin tempor nisl iaculis elit accumsan consequat eget laoreet odio. In egestas dui vitae imperdiet consectetur. Maecenas molestie tellus ligula, at vestibulum purus varius a. Nunc a ultricies tellus, vitae laoreet ipsum. Mauris eget euismod elit. Quisque consectetur mi turpis, a mollis purus consequat eget.";
         String copy2 = "We arrived to Hoi An fairly late at night, however when we did arrive we were pleasantly surprised at the hotel. The hotel itself was a rather lovely building but when we got to our room we found it had been prepared in such a way to make it feel special. There were flowers on the bed, a little message and even a little story waiting for us. It just felt very considered and gave a nice touch to the beginning of our stay. \n The next morning we were up and off fairly early for a walk with our guide to show us around the city. We made our way towards the old town but even on the way there was some rather nice architecture. It felt very different from the modern cities we had been spending time in basically since Malaysia.\n A ticket was required to be in the old town. They didn't check it on entry or exit, however I believe if you were caught without it you could be fined. The ticket included entry to some historical buildings as well as some shows, however unfortunately we didn't really have enough time in Hoi An to take full advantage of all the ticket had to offer.\n We were walked around the old town, and I was in awe. It was just so beautiful and it looked like it had come straight off a postcard. I am pretty sure it was a total tourist trap, and not \"authentic\" but to be honest that didn't bother me it was beautiful and clearly was daily life for those who lived in the area.";
@@ -76,10 +77,10 @@ public class DataLoader implements ApplicationRunner {
         Article article2 = new Article("Another thing happened", "here it goes", copy1, "image.png", "anotherimage.png", date2, category2, loisLane);
         articleRepository.save(article2);
 
-        Article article3 = new Article("Take Me Back To Hoi An", "Historic City In Vietnam", copy2, "../../../public/images/take_me_back_to_hoi_an_banner.jpg", "../../../public/images/take_me_back_to_hoi_an_thumb.jpg", date3, category3, loisLane);
+        Article article3 = new Article("Take Me Back To Hoi An", "Historic City In Vietnam", copy2, "take_me_back_to_hoi_an_banner.jpg", "take_me_back_to_hoi_an_thumb.jpg", date3, category3, loisLane);
         articleRepository.save(article3);
 
-        Article article4 = new Article("Sunrise? Wat Sunrise", "Unbelievable views at Angkor Wat", copy3, "../../../public/images/ankgor_banner.jpg", "../../../public/images/ankgor_thumb.jpg", date1, category3, loisLane);
+        Article article4 = new Article("Sunrise? Wat Sunrise", "Unbelievable views at Angkor Wat", copy3, "angkor_banner.jpg", "angkor_thumb.jpg", date1, category3, loisLane);
         articleRepository.save(article4);
     }
 }
