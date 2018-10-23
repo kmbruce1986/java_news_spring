@@ -10,7 +10,7 @@ import java.util.List;
 @Table(name = "journalists")
 public class Journalist {
 
-    @javax.persistence.Id
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id;
 

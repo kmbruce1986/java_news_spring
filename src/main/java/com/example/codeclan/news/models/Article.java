@@ -2,11 +2,11 @@ package com.example.codeclan.news.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.Cascade;
-import org.hibernate.mapping.Join;
+
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
-import java.util.Date;
+
 import java.util.List;
 
 @Entity
@@ -23,9 +23,8 @@ public class Article {
     @Column
     private String subline;
 
-//    rethink when adding in wysiwyg
-    @Lob
-    @Column
+
+    @Column(name = "copy", columnDefinition = "TEXT")
     private String copy;
 
     @Column
