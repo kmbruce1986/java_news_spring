@@ -137,10 +137,10 @@ public class DataLoader implements ApplicationRunner {
         categories5.add(sport);
 
 
-        Article article1 = new Article("CodeClan wins award", "CodeClan, digital skills academy, has won the biggest award.", copy1, "image.png", "anotherimage.png", date1, category1, johnSmith);
+        Article article1 = new Article("CodeClan wins award", "CodeClan, digital skills academy, has won the biggest award.", copy1, "codeclan_thumb.png", "codeclan_thumb.png", date1, category1, johnSmith);
         articleRepository.save(article1);
 
-        Article article2 = new Article("Storm enters UK", "Storm due to hit on Friday.", copy6, "image.png", "anotherimage.png", date2, category2, petraCook);
+        Article article2 = new Article("Storm enters UK", "Storm due to hit on Friday.", copy6, "storm_banner.jpg", "storm_thumb.jpg", date2, category2, petraCook);
         articleRepository.save(article2);
 
         Article article3 = new Article("Take Me Back To Hoi An", "Historic City In Vietnam", copy2, "take_me_back_to_hoi_an_banner.jpg", "take_me_back_to_hoi_an_thumb.jpg", date3, category3, samLloyd);
@@ -152,61 +152,61 @@ public class DataLoader implements ApplicationRunner {
         Article article5 = new Article("Tokyo Robots", "Gundam, Help Desks and Restaurants", copy4, "robot_banner.jpg", "robot_thumb.jpg", date4, categories4, keithGreen);
         articleRepository.save(article5);
 
-        Article article6 = new Article("UBS to China", "UBS says it allows staff to travel 'freely' to China after banker's departure delayed", copy5, "blank.jpg", "blank.jpg", date6, categories5, samLloyd);
+        Article article6 = new Article("UBS to China", "UBS says it allows staff to travel 'freely' to China after banker's departure delayed", copy5, "china_thumb.jpg", "china_banner.jpg", date6, categories5, samLloyd);
         articleRepository.save(article6);
 
-        Article article7 = new Article("Budget Travel", "How To Travel The World On $1,500 A Month", copy7, "blank.jpg", "blank.jpg", date7, category1, petraCook);
+        Article article7 = new Article("Budget Travel", "How To Travel The World On $1,500 A Month", copy7, "budget_banner.jpg", "budget_thumb.jpg", date7, category1, petraCook);
         articleRepository.save(article7);
 
-        Article article8 = new Article("Brexit is Coming", "London's popularity as tech hub slumps ahead of Brexit", copy8, "blank.jpg", "blank.jpg", date8, categories5, maryPeterson);
+        Article article8 = new Article("Brexit is Coming", "London's popularity as tech hub slumps ahead of Brexit", copy8, "brexit_banner.jpg", "brexit_thumb.jpg", date8, categories5, maryPeterson);
         articleRepository.save(article8);
 
-        Article article9 = new Article("Stocks Crashing", "Stocks are doing something not seen since the tech bubble", copy9, "blank.jpg", "blank.jpg", date9, categories5, petraCook);
+        Article article9 = new Article("Stocks Crashing", "Stocks are doing something not seen since the tech bubble", copy9, "stock_banner.jpg", "stock_thumb.jpg", date9, categories5, petraCook);
         articleRepository.save(article9);
 
-        Article article10 = new Article("Nintendo's New Toy", "Nintendo takes Labo gaming kits to school to get kids interested in science, math and tech", copy10, "blank.jpg", "blank.jpg", date10, category1, samLloyd);
+        Article article10 = new Article("Nintendo's New Toy", "Nintendo takes Labo gaming kits to school to get kids interested in science, math and tech", copy10, "nintendo_banner.jpg", "nintendo_thumb.jpg", date10, category1, samLloyd);
         articleRepository.save(article10);
 
-        Article article11 = new Article("New Breakthrough in Parkinson's Treatment", "Researchers have promising results", copy11, "blank.jpg", "blank.jpg", date11, category2, johnSmith);
+        Article article11 = new Article("New Breakthrough in Parkinson's Treatment", "Researchers have promising results", copy11, "treatment_banner.jpg", "treatment_thumb.jpg", date11, category2, johnSmith);
         articleRepository.save(article11);
 
-        Article article12 = new Article("On The Go Mobile News", "Take your mobile abroad for free.", copy12, "blank.jpg", "blank.jpg", date12, categories4, keithGreen);
+        Article article12 = new Article("On The Go Mobile News", "Take your mobile abroad for free.", copy12, "mobile_banner.jpg", "mobile_thumb.jpg", date12, categories4, keithGreen);
         articleRepository.save(article12);
 
-        Article article13 = new Article("Local Team Wins Cup", "First time in 17 years.", copy13, "blank.jpg", "blank.jpg", date13, categories6, johnSmith);
+        Article article13 = new Article("Local Team Wins Cup", "First time in 17 years.", copy13, "win_banner.jpg", "win_thumb.jpg", date13, categories6, johnSmith);
         articleRepository.save(article13);
 
-        Article article14 = new Article("Best Ways to Handle the Cold", "Bed rest is not the way forward, doctors say.", copy14, "blank.jpg", "blank.jpg", date14, category2, petraCook);
+        Article article14 = new Article("Best Ways to Handle the Cold", "Bed rest is not the way forward, doctors say.", copy14, "cold_thumb.jpg", "cold_banner.jpg", date14, category2, petraCook);
         articleRepository.save(article14);
 
-        Article article15 = new Article("Boxer Retires", "Too many knocks, she says.", copy15, "blank.jpg", "blank.jpg", date15, categories6, maryPeterson);
+        Article article15 = new Article("Boxer Retires", "Too many knocks, she says.", copy15, "boxer_banner.jpg", "boxer_thumb.jpg", date15, categories6, maryPeterson);
         articleRepository.save(article15);
 
-        Article article16 = new Article("Holiday-Makers Enjoy Lack of iPad", "More time to relax, they say.", copy16, "blank.jpg", "blank.jpg", date16, categories4, samLloyd);
+        Article article16 = new Article("Holiday-Makers Enjoy Lack of iPad", "More time to relax, they say.", copy16, "ipad_banner.jpg", "ipad_thumb.jpg", date16, categories4, samLloyd);
         articleRepository.save(article16);
 
-        Article article17 = new Article("Rugby Growing in Popularity", "Focus in schools cited as increasing fans.", copy17, "blank.jpg", "blank.jpg", date17, categories6, keithGreen);
+        Article article17 = new Article("Rugby Growing in Popularity", "Focus in schools cited as increasing fans.", copy17, "rugby_banner.jpg", "rugby_thumb.jpg", date17, categories6, keithGreen);
         articleRepository.save(article17);
 
-        Article article18 = new Article("Eat Yourself Healthy", "Diet key to long life.", copy18, "blank.jpg", "blank.jpg", date18, category2, johnSmith);
+        Article article18 = new Article("Eat Yourself Healthy", "Diet key to long life.", copy18, "diet_banner.jpg", "diet_thumb.jpg", date18, category2, johnSmith);
         articleRepository.save(article18);
 
-        Article article19 = new Article("Broken Legs are the Worst", "Kids struggle to catch up at school.", copy19, "blank.jpg", "blank.jpg", date19, category2, petraCook);
+        Article article19 = new Article("Broken Legs are the Worst", "Kids struggle to catch up at school.", copy19, "leg_banner.jpg", "leg_thumb.jpg", date19, category2, petraCook);
         articleRepository.save(article19);
 
-        Article article20 = new Article("General Election", "PM calls election for next month.", copy20, "blank.jpg", "blank.jpg", date20, categories5, maryPeterson);
+        Article article20 = new Article("General Election", "PM calls election for next month.", copy20, "election_banner.jpg", "election_thumb.jpg", date20, categories5, maryPeterson);
         articleRepository.save(article20);
 
-        Article article21 = new Article("New iPhone", "Apple will release next month.", copy21, "blank.jpg", "blank.jpg", date21, category1, samLloyd);
+        Article article21 = new Article("New iPhone", "Apple will release next month.", copy21, "iphone_banner.jpg", "iphone_thumb.jpg", date21, category1, samLloyd);
         articleRepository.save(article21);
 
-        Article article22 = new Article("Local MP to Resign", "Mr Jones will leave soon.", copy22, "blank.jpg", "blank.jpg", date22, categories5, keithGreen);
+        Article article22 = new Article("Local MP to Resign", "Mr Jones will leave soon.", copy22, "mp_banner.jpg", "mp_thumb.jpg", date22, categories5, keithGreen);
         articleRepository.save(article22);
 
-        Article article23 = new Article("Large Development for Glasgow", "1,000 new jobs to be created.", copy23, "blank.jpg", "blank.jpg", date23, category1, johnSmith);
+        Article article23 = new Article("Large Development for Glasgow", "1,000 new jobs to be created.", copy23, "development_banner.jpg", "development_thumb.jpg", date23, category1, johnSmith);
         articleRepository.save(article23);
 
-        Article article24 = new Article("Fly to Iceland from Glasgow", "Airline launches new route.", copy24, "blank.jpg", "blank.jpg", date24, category3, petraCook);
+        Article article24 = new Article("Fly to Iceland from Glasgow", "Airline launches new route.", copy24, "iceland_banner.jpg", "iceland_thumb.jpg", date24, category3, petraCook);
         articleRepository.save(article24);
 
 
