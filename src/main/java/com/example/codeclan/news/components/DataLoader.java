@@ -137,7 +137,7 @@ public class DataLoader implements ApplicationRunner {
         categories5.add(sport);
 
 
-        Article article1 = new Article("CodeClan wins award@", "CodeClan, digital skills academy, has won the biggest award.", copy1, "image.png", "anotherimage.png", date1, category1, johnSmith);
+        Article article1 = new Article("CodeClan wins award", "CodeClan, digital skills academy, has won the biggest award.", copy1, "image.png", "anotherimage.png", date1, category1, johnSmith);
         articleRepository.save(article1);
 
         Article article2 = new Article("Storm enters UK", "Storm due to hit on Friday.", copy6, "image.png", "anotherimage.png", date2, category2, petraCook);
