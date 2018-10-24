@@ -27,7 +27,7 @@ public class ArticleRepositoryImpl implements ArticleRepositoryCustom{
         try {
             cr.createAlias("categories", "category");
             cr.add(Restrictions.eq("category.Id", categoryId));
-            cr.addOrder(Order.asc("publishedDateTime"));
+            cr.addOrder(Order.desc("publishedDateTime"));
             results = cr.list();
         } catch (HibernateException e) {
             e.printStackTrace();
@@ -46,7 +46,7 @@ public class ArticleRepositoryImpl implements ArticleRepositoryCustom{
             Criteria cr = session.createCriteria(Article.class);
             cr.add(Restrictions.eq("journalist.id", journalistId));
             results = cr.list();
-            cr.addOrder(Order.asc("publishedDateTime"));
+            cr.addOrder(Order.desc("publishedDateTime"));
         } catch (HibernateException e) {
             e.printStackTrace();
         } finally {
