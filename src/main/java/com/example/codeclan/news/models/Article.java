@@ -167,4 +167,5 @@ public class Article {
     public void incrementTimesReadByOne(){
         this.timesRead += 1;
     }
+
 }

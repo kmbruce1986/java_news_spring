@@ -126,5 +126,9 @@ public class Journalist {
         }
         this.articles.remove(foundArticle);
     }
+
+    public int countArticles(){
+        return this.articles.size();
+    }
 }
 
