@@ -62,7 +62,7 @@ public class ArticleRepositoryImpl implements ArticleRepositoryCustom{
         Session session = entityManager.unwrap(Session.class);
         Criteria cr = session.createCriteria(Article.class);
         try {
-            cr.addOrder(Order.asc("publishedDateTime"));
+            cr.addOrder(Order.desc("publishedDateTime"));
             results = cr.list();
         } catch (HibernateException e) {
             e.printStackTrace();
