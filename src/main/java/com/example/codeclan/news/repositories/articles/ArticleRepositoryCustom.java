@@ -9,4 +9,6 @@ public interface ArticleRepositoryCustom {
     List<Article> getArticlesByCategory(Long categoryId);
 
     List<Article> getArticlesByJournalist(Long journalistId);
+
+    List<Article> getArticles();
 }

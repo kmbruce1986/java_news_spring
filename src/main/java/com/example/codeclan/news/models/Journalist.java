@@ -10,7 +10,7 @@ import java.util.List;
 @Table(name = "journalists")
 public class Journalist {
 
-    @javax.persistence.Id
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id;
 
@@ -125,6 +125,10 @@ public class Journalist {
             }
         }
         this.articles.remove(foundArticle);
+    }
+
+    public int countArticles(){
+        return this.articles.size();
     }
 }
 
